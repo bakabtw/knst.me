@@ -21,7 +21,7 @@ npm start dev
 
 Production
 ```
-npm build
+npm run build
 ```
 
 # Running in Docker
