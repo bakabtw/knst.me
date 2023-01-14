@@ -3,9 +3,8 @@ FROM node:alpine as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY . .
-RUN npm ci --silent
-RUN npm install react-scripts --silent
-RUN npm run build
+RUN yarn install -g --silent
+RUN yarn run build
 
 # Production environment
 FROM nginx:stable-alpine
