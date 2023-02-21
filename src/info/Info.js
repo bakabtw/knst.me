@@ -49,6 +49,16 @@ export const info = {
             link: "https://github.com/bakabtw",
             icon: "fa fa-github",
             label: 'github'
+        },
+        {
+            link: "https://www.linkedin.com/in/eugenekonst/",
+            icon: "fa fa-linkedin",
+            label: 'linkedin'
+        },
+        {
+            link: "https://www.instagram.com/eugene.knst/",
+            icon: "fa fa-instagram",
+            label: 'instagram'
         }
     ],
     bio: "Hello! I'm Eugene, and I'm a full-stack developer. ",
