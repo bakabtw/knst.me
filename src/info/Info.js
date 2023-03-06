@@ -74,16 +74,16 @@ export const info = {
             emoji: '📖'
         },
         {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
+            label: 'cycling',
+            emoji: '🚴'
         },
         {
             label: 'cooking',
             emoji: '🌶'
+        },
+        {
+            label: 'movies',
+            emoji: '🎥'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
