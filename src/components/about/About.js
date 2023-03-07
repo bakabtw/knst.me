@@ -20,7 +20,7 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>$</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>$</span> cd skills
             </p>
             <p><span style={{color: info.baseColor}}>$</span> ls -la</p>
             <p style={{color: info.baseColor}}> Proficient With</p>
