@@ -7,6 +7,7 @@ import Portfolio from "./portfolio/Portfolio";
 import NotFound from './NotFound';
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
+import {Helmet} from 'react-helmet';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(true);
@@ -17,6 +18,9 @@ export default function BaseLayout() {
 
    return (
       <Box className={darkMode ? Style.dark : Style.light}>
+         <Helmet>
+            <meta name='theme-color' content={darkMode ? '#c9c9c9' : '#1f1f1f'}/>
+         </Helmet>
          <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
             <Grid item>
