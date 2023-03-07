@@ -20,7 +20,7 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>$</span> cd skills
+            <p><span style={{color: info.baseColor}}>$</span> cd ~/skills/
             </p>
             <p><span style={{color: info.baseColor}}>$</span> ls -la</p>
             <p style={{color: info.baseColor}}> Proficient With</p>
@@ -37,7 +37,7 @@ export default function About() {
     function miscText() {
         return <>
             <p><span style={{color: info.baseColor}}>$</span> cd
-                hobbies</p>
+                ~/hobbies/</p>
             <p><span style={{color: info.baseColor}}>$</span> ls -la</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
