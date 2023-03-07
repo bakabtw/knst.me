@@ -19,7 +19,7 @@ export default function BaseLayout() {
    return (
       <Box className={darkMode ? Style.dark : Style.light}>
          <Helmet>
-            <meta name='theme-color' content={darkMode ? '#1f1f1f' : '#c9c9c9'}/>
+            <meta name='theme-color' content={darkMode ? '#1f1f1f' : '#f8f8f8'}/>
          </Helmet>
          <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
