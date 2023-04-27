@@ -91,7 +91,7 @@ export const info = {
     portfolio: [ // This is where your portfolio projects will be detailed
         {
             title: "ASIC agent",
-            live: "https://power.knst.me/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            live: "", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/bakabtw/asic-agent", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
