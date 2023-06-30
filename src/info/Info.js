@@ -1,5 +1,7 @@
 import self from "../img/self.png"
 import mock1 from "../img/asic-agent.png"
+import mock2 from "../img/mining-monitoring.png"
+import mock3 from "../img/psu-monitoring.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -90,23 +92,23 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "ASIC agent",
-            live: "https://power.knst.me", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/bakabtw/asic-agent", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "ASIC agent - a tool for controlling ASICs running on PV power",
+            live: "https://power.knst.me",
+            source: "https://github.com/bakabtw/asic-agent",
             image: mock1
         },
-        // {
-        //     title: "Project 2",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock2
-        // },
-        // {
-        //     title: "Project 3",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock3
-        // },
+        {
+            title: "BTC farm monitoring",
+            live: "",
+            source: "",
+            image: mock2
+        },
+        {
+            title: "Monitoring tool for telecom power supply",
+            live: "",
+            source: "",
+            image: mock3
+        },
         // {
         //     title: "Project 4",
         //     live: "https://paytonpierce.dev",
