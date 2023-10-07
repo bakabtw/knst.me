@@ -105,7 +105,7 @@ export const info = {
         },
         {
             title: "Monitoring tool for telecom power supply",
-            live: "",
+            live: "https://grafana.payload.network/public-dashboards/eb42f39930524de4b05e8efaca460463?orgId=1",
             source: "",
             image: mock3
         },
