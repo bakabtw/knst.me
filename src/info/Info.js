@@ -99,7 +99,7 @@ export const info = {
         },
         {
             title: "BTC farm monitoring",
-            live: "",
+            live: "https://mining-demo.payload.network/public-dashboards/b7c5989e752e4e43947d4f82886ecfa1?orgId=1",
             source: "",
             image: mock2
         },
