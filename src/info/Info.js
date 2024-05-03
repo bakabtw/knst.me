@@ -30,16 +30,16 @@ export const info = {
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
-            emoji: '☕',
-            text: 'fueled by coffee'
+            emoji: "☕",
+            text: "fueled by coffee"
         },
         {
-            emoji: '🌎',
-            text: 'based in Moscow'
+            emoji: "🌎",
+            text: "based in Phuket"
         },
         {
             emoji: "💼",
-            text: "freelancer"
+            text: "founder of payload.network"
         },
         {
             emoji: "📧",
