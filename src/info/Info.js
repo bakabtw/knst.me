@@ -53,6 +53,11 @@ export const info = {
             label: 'github'
         },
         {
+            link: "https://t.me/bakabtw",
+            icon: "fa fa-telegram",
+            label: 'telegram'
+        },
+        {
             link: "https://www.linkedin.com/in/eugenekonst/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
