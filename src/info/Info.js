@@ -2,6 +2,7 @@ import self from "../img/self.png"
 import mock1 from "../img/asic-agent.png"
 import mock2 from "../img/mining-monitoring.png"
 import mock3 from "../img/psu-monitoring.png"
+import mock4 from "../img/luci-xiaomi-vpn.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -114,12 +115,12 @@ export const info = {
             source: "",
             image: mock3
         },
-        // {
-        //     title: "Project 4",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock4
-        // },
+        {
+            title: "Commercial VPN service",
+            live: "",
+            source: "",
+            image: mock4
+        },
         // {
         //     title: "Project 5",
         //     live: "https://paytonpierce.dev",
