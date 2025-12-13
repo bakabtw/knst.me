@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Payload Network",
-  description: "We break stuff, so hackers don't have to.",
+  title: "Cloud DevOps Engineer",
+  description: "Building scalable cloud infrastructure with automation, CI/CD pipelines, and infrastructure as code.",
 };
 
 export default function RootLayout({

