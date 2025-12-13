@@ -47,7 +47,7 @@ export default function Home() {
       <main className="relative z-10 w-full max-w-4xl mx-2 sm:mx-4">
         <div className="glass-container rounded-lg sm:rounded-xl overflow-hidden shadow-2xl">
           {/* macOS Style Top Bar */}
-          <div className="macos-topbar flex items-center px-2 sm:px-4 py-2 sm:py-3 bg-white/10 backdrop-blur-xl border-b border-white/20">
+          <div className="macos-topbar flex items-center px-2 sm:px-4 py-2 sm:py-3 bg-black/50 backdrop-blur-xl border-b border-white/20">
             <div className="flex gap-1.5 sm:gap-2">
               <div
                 onClick={() => handleButtonClick("red")}
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
 
           {/* Content Area */}
-          <div className="p-4 sm:p-8 lg:p-12">
+          <div className="p-4 sm:p-8 lg:p-12 bg-black/40">
             <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 text-center">
               <pre className="text-white text-[8px] xs:text-[10px] sm:text-xs md:text-sm leading-tight drop-shadow-lg overflow-x-auto max-w-full">
                 {`
