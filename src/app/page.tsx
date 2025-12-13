@@ -91,6 +91,7 @@ export default function Home() {
               <p className="text-white/80 font-mono text-xs sm:text-sm -mt-2 sm:-mt-4 px-2">
                 Infrastructure as Code | CI/CD Automation | Cloud Architecture
               </p>
+
               <div className="w-full max-w-lg mt-4 sm:mt-6 lg:mt-8 font-mono px-2">
                 <div className="text-left space-y-1.5 sm:space-y-2 text-green-400 text-xs sm:text-sm overflow-x-auto">
                   <p className="text-green-500/70">// SYSTEM STATUS</p>
@@ -107,6 +108,29 @@ export default function Home() {
                     <span className="text-green-400">$</span> <span className="text-green-500/70"># Uptime: 99.99% | Deployments: 847 | Zero downtime</span>
                   </p>
                   <p className="text-green-400 animate-pulse">█</p>
+                </div>
+              </div>
+
+              {/* Contact Details */}
+              <div className="w-full max-w-lg mt-6 sm:mt-8 font-mono px-2">
+                <div className="glass-container rounded-lg p-4 sm:p-6 border border-green-500/30">
+                  <p className="text-green-400 text-xs sm:text-sm mb-4 font-bold text-left">// CONTACT DETAILS</p>
+                  <div className="space-y-2 text-left">
+                    <div className="flex items-center gap-2 text-white/90 text-xs sm:text-sm">
+                      <span className="text-green-400">📧</span>
+                      <span className="text-green-500/70">Email:</span>
+                      <a href="mailto:contact@knst.me" className="text-yellow-300 hover:text-yellow-200 transition-colors">
+                        contact@knst.me
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/90 text-xs sm:text-sm">
+                      <span className="text-green-400">🐙</span>
+                      <span className="text-green-500/70">GitHub:</span>
+                      <a href="https://github.com/bakabtw" target="_blank" rel="noopener noreferrer" className="text-yellow-300 hover:text-yellow-200 transition-colors">
+                        @bakabtw
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
